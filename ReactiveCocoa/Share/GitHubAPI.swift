@@ -13,7 +13,7 @@ private func JSONResponseDataFormatter(_ data: Data) -> Data {
     }
 }
 
-let GitHubProvider = MoyaProvider<GitHub>(plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
+let GitHubProvider = MoyaProvider<GitHub>(plugins: [NetworkLoggerPlugin(verbose:true, responseDataFormatter: JSONResponseDataFormatter)])
 
 // MARK: - Provider support
 
@@ -24,21 +24,18 @@ private extension String {
 }
 
 public enum GitHub {
-    case zen
-    case userProfile(String)
-    case userRepositories(String)
+   case getTopicList(String)
+   case login
 }
 
 extension GitHub: TargetType {
-    public var baseURL: URL { return URL(string: "https://api.github.com")! }
+    public var baseURL: URL { return URL(string: "http://a.ajmide.com")! }
     public var path: String {
         switch self {
-        case .zen:
-            return "/zen"
-        case .userProfile(let name):
-            return "/users/\(name.urlEscaped)"
-        case .userRepositories(let name):
-            return "/users/\(name.urlEscaped)/repos"
+        case .getTopicList(_):
+            return "/v10/get_topic_list.php"
+        default:
+            return "/v10/get_topic_list.php"
         }
     }
     public var method: Moya.Method {
@@ -46,8 +43,8 @@ extension GitHub: TargetType {
     }
     public var parameters: [String: Any]? {
         switch self {
-        case .userRepositories(_):
-            return ["sort": "pushed"]
+        case .getTopicList(let porgramId):
+            return ["p": porgramId]
         default:
             return nil
         }
@@ -60,7 +57,7 @@ extension GitHub: TargetType {
     }
     public var validate: Bool {
         switch self {
-        case .zen:
+        case .getTopicList(_):
             return true
         default:
             return false
@@ -68,11 +65,9 @@ extension GitHub: TargetType {
     }
     public var sampleData: Data {
         switch self {
-        case .zen:
-            return "Half measures are as bad as nothing at all.".data(using: String.Encoding.utf8)!
-        case .userProfile(let name):
-            return "{\"login\": \"\(name)\", \"id\": 100}".data(using: String.Encoding.utf8)!
-        case .userRepositories(_):
+        case .getTopicList(_):
+            return "[{\"name\": \"Repo Name\"}]".data(using: String.Encoding.utf8)!
+        case .login:
             return "[{\"name\": \"Repo Name\"}]".data(using: String.Encoding.utf8)!
         }
     }

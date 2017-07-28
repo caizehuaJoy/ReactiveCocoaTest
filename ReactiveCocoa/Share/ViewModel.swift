@@ -11,18 +11,14 @@ import RxSwift
 import Moya
 
 class ViewModel {
-    private let provider = RxMoyaProvider<MyAPI>()
+    private let provider = RxMoyaProvider<GitHub>()
     
-    func getPosts() -> Observable<[Post]> {
-        return provider.request(.Show)
+    func getTopicList(programId:String) -> Observable<Post> {
+        return provider.request(.getTopicList(programId))
             .filterSuccessfulStatusCodes()
             .mapJSON()
-            .mapArray(type: Post.self)
+            .mapObject(type:Post.self)
     }
     
-    func createPost(title: String, body: String, userId: Int) -> Observable<Post> {
-        return provider.request(.Create(title: title, body: body, userId: userId))
-            .mapJSON()
-            .mapObject(type: Post.self)
-    }
+  
 }

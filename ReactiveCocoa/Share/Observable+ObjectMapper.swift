@@ -36,7 +36,7 @@ extension Observable {
                 throw RxSwiftMoyaError.ParseJSONError
             }
             
-            return Mapper<T>().mapArray(JSONArray: dicts)!
+            return Mapper<T>().mapArray(JSONArray: dicts)
         }
     }
 }

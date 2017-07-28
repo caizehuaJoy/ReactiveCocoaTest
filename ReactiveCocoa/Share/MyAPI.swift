@@ -7,9 +7,7 @@
 //
 
 import Foundation
-import RxSwift
 import Moya
-import Alamofire
 
 enum MyAPI {
     case Show
@@ -29,16 +27,18 @@ extension MyAPI: TargetType {
             return "/posts"
         }
     }
-    
+  
     var method: Moya.Method {
         switch self {
         case .Show:
-            return .GET
+            return .get
         case .Create(_, _, _):
-            return .POST
+            return .post
         }
     }
-    
+    var parameterEncoding: ParameterEncoding {
+        return URLEncoding.default
+    }
     var parameters: [String: Any]? {
         switch self {
         case .Show:

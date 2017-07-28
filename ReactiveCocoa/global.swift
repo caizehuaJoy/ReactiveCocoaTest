@@ -7,29 +7,28 @@
 //
 
 import UIKit
+import SnapKit
+import Kingfisher
 
-class global: UIViewController {
+let a = "aaaa"
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+func RGBA(_ rgbValue:Int,alpha:Float) -> UIColor {
+    return UIColor(colorLiteralRed:  Float((rgbValue & 0xFF0000) >> 16)/255.0, green: Float((rgbValue & 0xFF00) >> 8)/255.0, blue: Float(rgbValue & 0xFF)/255.0, alpha: alpha)
 }
+func RGB(_ rgbValue:Int) -> UIColor {
+   return RGBA(rgbValue, alpha: 1.0)
+}
+func kiPhone6FixFont(_ value:CGFloat)->CGFloat
+{
+  
+    return  (UIScreen.main.bounds.size.width-375)/15/UIScreen.main.scale +  value
+    
+}
+func kiPhone6STrueWidth(_ value:Float)->Float
+{
+    
+    return  Float(UIScreen.main.bounds.size.width/375.0)*value;
+    
+}
+
