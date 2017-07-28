@@ -10,7 +10,6 @@
 		17E12778E35B9742A678A067 /* Pods_ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7BF979EAE40C3EFB17ABD5 /* Pods_ReactiveCocoa.framework */; };
 		E5326D981F22F91800057836 /* GiphyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5326D951F22F91800057836 /* GiphyAPI.swift */; };
 		E5326D991F22F91800057836 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5326D961F22F91800057836 /* GitHubAPI.swift */; };
-		E5326D9A1F22F91800057836 /* GitHubUserContentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5326D971F22F91800057836 /* GitHubUserContentAPI.swift */; };
 		E5742A201F1BAFD400A6A812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5742A1F1F1BAFD400A6A812 /* AppDelegate.swift */; };
 		E5742A221F1BAFD400A6A812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5742A211F1BAFD400A6A812 /* ViewController.swift */; };
 		E5742A251F1BAFD400A6A812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5742A231F1BAFD400A6A812 /* Main.storyboard */; };
@@ -48,7 +47,6 @@
 		7F7BF979EAE40C3EFB17ABD5 /* Pods_ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5326D951F22F91800057836 /* GiphyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiphyAPI.swift; sourceTree = "<group>"; };
 		E5326D961F22F91800057836 /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
-		E5326D971F22F91800057836 /* GitHubUserContentAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubUserContentAPI.swift; sourceTree = "<group>"; };
 		E5742A1C1F1BAFD400A6A812 /* ReactiveCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5742A1F1F1BAFD400A6A812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5742A211F1BAFD400A6A812 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 				E5F317611F24BC1A00B6DF99 /* ViewModel.swift */,
 				E5326D951F22F91800057836 /* GiphyAPI.swift */,
 				E5326D961F22F91800057836 /* GitHubAPI.swift */,
-				E5326D971F22F91800057836 /* GitHubUserContentAPI.swift */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -370,7 +367,6 @@
 				E5326D981F22F91800057836 /* GiphyAPI.swift in Sources */,
 				E5F317621F24BC1A00B6DF99 /* MyAPI.swift in Sources */,
 				E5C5932B1F224DC5007079AE /* global.swift in Sources */,
-				E5326D9A1F22F91800057836 /* GitHubUserContentAPI.swift in Sources */,
 				E5F317631F24BC1A00B6DF99 /* Observable+ObjectMapper.swift in Sources */,
 				E5742A221F1BAFD400A6A812 /* ViewController.swift in Sources */,
 				E5F317641F24BC1A00B6DF99 /* Post.swift in Sources */,
