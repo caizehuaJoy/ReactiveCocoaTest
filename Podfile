@@ -10,7 +10,7 @@ pod 'SnapKit'
 pod 'ObjectMapper'
 pod 'DZNEmptyDataSet'
 pod 'ESPullToRefresh'
-
+pod 'Toast-Swift'
 end
 
 use_frameworks!

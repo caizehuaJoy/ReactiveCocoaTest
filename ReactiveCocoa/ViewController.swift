@@ -45,18 +45,18 @@ class ViewController: UIViewController {
     
         self.view.addSubview(self.tableView);
         
-//        box.backgroundColor = RGB(0xff8400)
-//        box.addTarget(self, action: #selector(tapAct), for: .touchUpInside)
-//        box.setTitle("kiPhone6FixFont", for: .normal)
-//        box.titleLabel?.font=UIFont.systemFont(ofSize:  kiPhone6FixFont(12)) 
-//        self.view.addSubview(box)
-//        
-//        box.snp.makeConstraints { (make) -> Void in
-//          make.width.equalTo(kiPhone6STrueWidth(100))
-//          self.topConstraint = make.height.equalTo(kiPhone6STrueWidth(100)).constraint
-//            make.top.equalTo(self.view.snp.top).offset(70)
-//            make.centerX.equalTo(self.view.snp.centerX);
-//        }
+        box.backgroundColor = RGB(0xff8400)
+        box.addTarget(self, action: #selector(tapAct), for: .touchUpInside)
+        box.setTitle("kiPhone6FixFont", for: .normal)
+        box.titleLabel?.font=UIFont.systemFont(ofSize:  kiPhone6FixFont(12)) 
+        self.view.addSubview(box)
+        
+        box.snp.makeConstraints { (make) -> Void in
+          make.width.equalTo(kiPhone6STrueWidth(100))
+          self.topConstraint = make.height.equalTo(kiPhone6STrueWidth(100)).constraint
+            make.top.equalTo(self.view.snp.top).offset(70)
+            make.centerX.equalTo(self.view.snp.centerX);
+        }
         self.view.addSubview(image)
         image.contentMode = .scaleAspectFit
         image.snp.makeConstraints { (make) in
@@ -70,9 +70,11 @@ class ViewController: UIViewController {
         
     }
     func tapAct() {
+          
         print("点击按钮")
        // self.topConstraint?.update(offset: 200);
-        self.downloadZen();
+        let secondViewController = TestViewController()
+        self.navigationController!.pushViewController(secondViewController, animated: true)
         
     }
     

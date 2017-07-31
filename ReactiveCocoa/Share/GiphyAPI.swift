@@ -1,14 +1,14 @@
 import Foundation
 import Moya
 
-let GiphyProvider = MoyaProvider<Giphy>()
+
 
 public enum Giphy {
     case upload(gif: Data)
 }
 
 extension Giphy: TargetType {
-    public var baseURL: URL { return URL(string: "https://upload.giphy.com")! }
+    public var baseURL: URL { return URL(string: "http://upload.ajmide.com")! }
     public var path: String {
         switch self {
         case .upload:

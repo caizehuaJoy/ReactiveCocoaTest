@@ -13,7 +13,7 @@ private func JSONResponseDataFormatter(_ data: Data) -> Data {
     }
 }
 
-let GitHubProvider = MoyaProvider<GitHub>(plugins: [NetworkLoggerPlugin(verbose:true, responseDataFormatter: JSONResponseDataFormatter)])
+
 
 // MARK: - Provider support
 
@@ -23,12 +23,12 @@ private extension String {
     }
 }
 
-public enum GitHub {
+public enum QIandaoAPI {
    case getTopicList(String)
    case login
 }
 
-extension GitHub: TargetType {
+extension QIandaoAPI: TargetType {
     public var baseURL: URL { return URL(string: "http://a.ajmide.com")! }
     public var path: String {
         switch self {

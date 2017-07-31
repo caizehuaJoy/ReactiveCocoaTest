@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		17E12778E35B9742A678A067 /* Pods_ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7BF979EAE40C3EFB17ABD5 /* Pods_ReactiveCocoa.framework */; };
+		E52DA31C1F2C2899008A4791 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DA31A1F2C2899008A4791 /* TestViewController.swift */; };
+		E52DA31D1F2C2899008A4791 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E52DA31B1F2C2899008A4791 /* TestViewController.xib */; };
+		E52DA31F1F2C36D8008A4791 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52DA31E1F2C36D8008A4791 /* AVFoundation.framework */; };
+		E52DA3241F2C4D21008A4791 /* UploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DA3231F2C4D21008A4791 /* UploadModel.swift */; };
+		E52DA3261F2C4E6C008A4791 /* ResultCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DA3251F2C4E6C008A4791 /* ResultCC.swift */; };
 		E5326D981F22F91800057836 /* GiphyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5326D951F22F91800057836 /* GiphyAPI.swift */; };
-		E5326D991F22F91800057836 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5326D961F22F91800057836 /* GitHubAPI.swift */; };
+		E5326D991F22F91800057836 /* QIandaoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5326D961F22F91800057836 /* QIandaoAPI.swift */; };
 		E5742A201F1BAFD400A6A812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5742A1F1F1BAFD400A6A812 /* AppDelegate.swift */; };
 		E5742A221F1BAFD400A6A812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5742A211F1BAFD400A6A812 /* ViewController.swift */; };
 		E5742A251F1BAFD400A6A812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5742A231F1BAFD400A6A812 /* Main.storyboard */; };
@@ -22,6 +27,7 @@
 		E5F317631F24BC1A00B6DF99 /* Observable+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3175F1F24BC1A00B6DF99 /* Observable+ObjectMapper.swift */; };
 		E5F317641F24BC1A00B6DF99 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F317601F24BC1A00B6DF99 /* Post.swift */; };
 		E5F317651F24BC1A00B6DF99 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F317611F24BC1A00B6DF99 /* ViewModel.swift */; };
+		E5FD2C981F2E19DA0081C88E /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FD2C971F2E19DA0081C88E /* SweetAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +51,14 @@
 		3DB95E2CCE43F96CF3E56797 /* Pods-ReactiveCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoa/Pods-ReactiveCocoa.debug.xcconfig"; sourceTree = "<group>"; };
 		5F46691B303CA7DF5735785C /* Pods-ReactiveCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoa.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoa/Pods-ReactiveCocoa.release.xcconfig"; sourceTree = "<group>"; };
 		7F7BF979EAE40C3EFB17ABD5 /* Pods_ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52DA31A1F2C2899008A4791 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		E52DA31B1F2C2899008A4791 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		E52DA31E1F2C36D8008A4791 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E52DA3201F2C3700008A4791 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		E52DA3231F2C4D21008A4791 /* UploadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadModel.swift; sourceTree = "<group>"; };
+		E52DA3251F2C4E6C008A4791 /* ResultCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultCC.swift; sourceTree = "<group>"; };
 		E5326D951F22F91800057836 /* GiphyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiphyAPI.swift; sourceTree = "<group>"; };
-		E5326D961F22F91800057836 /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		E5326D961F22F91800057836 /* QIandaoAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QIandaoAPI.swift; sourceTree = "<group>"; };
 		E5742A1C1F1BAFD400A6A812 /* ReactiveCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5742A1F1F1BAFD400A6A812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5742A211F1BAFD400A6A812 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +77,7 @@
 		E5F3175F1F24BC1A00B6DF99 /* Observable+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+ObjectMapper.swift"; sourceTree = "<group>"; };
 		E5F317601F24BC1A00B6DF99 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		E5F317611F24BC1A00B6DF99 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E5FD2C971F2E19DA0081C88E /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E52DA31F1F2C36D8008A4791 /* AVFoundation.framework in Frameworks */,
 				17E12778E35B9742A678A067 /* Pods_ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +119,8 @@
 		984BF98A264924463A3BA24F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E52DA3201F2C3700008A4791 /* AssetsLibrary.framework */,
+				E52DA31E1F2C36D8008A4791 /* AVFoundation.framework */,
 				7F7BF979EAE40C3EFB17ABD5 /* Pods_ReactiveCocoa.framework */,
 			);
 			name = Frameworks;
@@ -118,7 +134,9 @@
 				E5F317601F24BC1A00B6DF99 /* Post.swift */,
 				E5F317611F24BC1A00B6DF99 /* ViewModel.swift */,
 				E5326D951F22F91800057836 /* GiphyAPI.swift */,
-				E5326D961F22F91800057836 /* GitHubAPI.swift */,
+				E5326D961F22F91800057836 /* QIandaoAPI.swift */,
+				E52DA3231F2C4D21008A4791 /* UploadModel.swift */,
+				E52DA3251F2C4E6C008A4791 /* ResultCC.swift */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -148,6 +166,7 @@
 		E5742A1E1F1BAFD400A6A812 /* ReactiveCocoa */ = {
 			isa = PBXGroup;
 			children = (
+				E5FD2C961F2E19DA0081C88E /* Common */,
 				E5326D941F22F91800057836 /* Share */,
 				E5742A1F1F1BAFD400A6A812 /* AppDelegate.swift */,
 				E5742A211F1BAFD400A6A812 /* ViewController.swift */,
@@ -156,6 +175,8 @@
 				E5742A281F1BAFD400A6A812 /* LaunchScreen.storyboard */,
 				E5742A2B1F1BAFD400A6A812 /* Info.plist */,
 				E5C5932A1F224DC5007079AE /* global.swift */,
+				E52DA31A1F2C2899008A4791 /* TestViewController.swift */,
+				E52DA31B1F2C2899008A4791 /* TestViewController.xib */,
 			);
 			path = ReactiveCocoa;
 			sourceTree = "<group>";
@@ -176,6 +197,14 @@
 				E5742A411F1BAFD500A6A812 /* Info.plist */,
 			);
 			path = ReactiveCocoaUITests;
+			sourceTree = "<group>";
+		};
+		E5FD2C961F2E19DA0081C88E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E5FD2C971F2E19DA0081C88E /* SweetAlert.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +278,7 @@
 				TargetAttributes = {
 					E5742A1B1F1BAFD400A6A812 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6C389SNXVP;
 						ProvisioningStyle = Automatic;
 					};
 					E5742A2F1F1BAFD500A6A812 = {
@@ -290,6 +320,7 @@
 			files = (
 				E5742A2A1F1BAFD400A6A812 /* LaunchScreen.storyboard in Resources */,
 				E5742A271F1BAFD400A6A812 /* Assets.xcassets in Resources */,
+				E52DA31D1F2C2899008A4791 /* TestViewController.xib in Resources */,
 				E5742A251F1BAFD400A6A812 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,14 +394,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E52DA31C1F2C2899008A4791 /* TestViewController.swift in Sources */,
 				E5F317651F24BC1A00B6DF99 /* ViewModel.swift in Sources */,
+				E52DA3261F2C4E6C008A4791 /* ResultCC.swift in Sources */,
+				E5FD2C981F2E19DA0081C88E /* SweetAlert.swift in Sources */,
 				E5326D981F22F91800057836 /* GiphyAPI.swift in Sources */,
 				E5F317621F24BC1A00B6DF99 /* MyAPI.swift in Sources */,
+				E52DA3241F2C4D21008A4791 /* UploadModel.swift in Sources */,
 				E5C5932B1F224DC5007079AE /* global.swift in Sources */,
 				E5F317631F24BC1A00B6DF99 /* Observable+ObjectMapper.swift in Sources */,
 				E5742A221F1BAFD400A6A812 /* ViewController.swift in Sources */,
 				E5F317641F24BC1A00B6DF99 /* Post.swift in Sources */,
-				E5326D991F22F91800057836 /* GitHubAPI.swift in Sources */,
+				E5326D991F22F91800057836 /* QIandaoAPI.swift in Sources */,
 				E5742A201F1BAFD400A6A812 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,7 +561,10 @@
 			baseConfigurationReference = 3DB95E2CCE43F96CF3E56797 /* Pods-ReactiveCocoa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 6C389SNXVP;
 				INFOPLIST_FILE = ReactiveCocoa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bojie.ReactiveCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -539,7 +577,10 @@
 			baseConfigurationReference = 5F46691B303CA7DF5735785C /* Pods-ReactiveCocoa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 6C389SNXVP;
 				INFOPLIST_FILE = ReactiveCocoa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bojie.ReactiveCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";

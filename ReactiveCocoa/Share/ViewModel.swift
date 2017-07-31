@@ -11,7 +11,7 @@ import RxSwift
 import Moya
 
 class ViewModel {
-    private let provider = RxMoyaProvider<GitHub>()
+    private let provider = RxMoyaProvider<QIandaoAPI>()
     
     func getTopicList(programId:String) -> Observable<Post> {
         return provider.request(.getTopicList(programId))
